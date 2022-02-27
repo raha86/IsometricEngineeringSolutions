@@ -1,0 +1,70 @@
+extends base.pug
+
+block style 
+    include ../static/home.css
+
+block content 
+  section#sechome
+    h3 WE BUILD YOUR DREAM  
+  section#intro
+    section#introtext 
+      h4.smallhead VIEW THE EXTRAORDINARY
+      hr.line
+      h3.mainhead Explore with IES
+      p Isometric Engineering Solutions is a company with continuously growing techniques and updated technologies. We keep updating ourself to provide you with the updated and demanded solutions.
+
+      section.button#btnintro
+        a(href="/gallery" id = "btngallery1") VIEW GALLERY
+    section#introimg
+      section.introanimcont
+        img(src="../static/img/intro.jpg", alt="" class = "introanim")
+ 
+  //- highlight section 
+  section#highlights 
+    section#highlightsinside
+      h3 UNPARALLELED SERVICE AND EXPERT ADVICE AT EVERY STEP 
+      p While getting your project done our experts are always there to provide you the expertise and help you out with best suitable options and solutions.
+  
+  //- team section 
+  section#iesteam
+    section#iesteamtext
+      h4.smallhead WE ALL TEAMED UP
+      hr.line
+      h3.mainhead IES Partners
+      p We, a bunch of Engineers, working in various places on various projects, gathering out of the box experiences joined our paths together and started our journey as team IES. We appreciate and encourage you to be a part of our journey and let us be yours and to make it a seamless one.
+
+      section.button#btniesteamtext
+        a(href="/about" id = "btnmember") MEET THE TEAM 
+    section#iesteamimg 
+      section.teamanimcont
+        img(src="../static/img/team.jpg", alt="" class = "teamanim")
+  
+  //- special thing section 
+  section#spcltng
+    section#spcltngimg
+      section.spcltnganimcont 
+        img(src="../static/img/spcltng.jpg", alt="" class = "spcltnganim")
+    section#spcltngtext
+      h4.smallhead THINGS WHICH ARE SPECIAL
+      hr.line
+      h3.mainhead Special Attributes
+      p May no one else but we care. Our speciality lies in the expertise and the gathered experiences of our Engineers. The realm of expertise helps us deliver the best that no one else can. We endeavour to achieve better quality better look and better innovation. We feel proud delivering you the best.
+
+      section.button#btnspcltng 
+        a(href="/services" id = "btnservices") OUR SERVICES
+
+  section#commit
+    section#committext 
+      h4.smallhead YES WE COMMIT
+      hr.line
+      h3.mainhead Our Commitments
+      p We are the ones who value you the most. Let us be the part of your journey and we promise you to deliver the best. We strives to make your shelter a pleasurable one. Our goal is to make it a seamless and enjoyable experience. Rest assured with our commitments. 
+    section#commitimg 
+      section.commitanimcont 
+        img(src="../static/img/commit.jpg", alt="" class = "commitanim")
+  //- button.scrollToTopBtn 
+  //-   i.fa.fa-angle-up 
+
+block scripts
+  script(src="../static/home.js") 
+    

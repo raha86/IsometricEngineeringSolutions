@@ -1,0 +1,532 @@
+    /* SERVICES MAIN SECTION  */
+#servicesmain{
+    height: 850px;
+    background: url("../static/img/servicesmain.jpg") center center/cover, linear-gradient(grey, grey);
+    background-blend-mode: multiply;
+    color: white;
+}
+#servicesmain h3{
+    font-size: 80px;
+    margin: 0px;
+    padding-top: 250px;
+    text-align: center;
+}
+
+/* civil domain sectio  */
+#civildomain{
+    display: grid;
+    grid-template-columns: 54fr 46fr;
+}
+#civildomaintext{
+    display: flex;
+    flex-direction: column;
+    padding: 130px 120px 230px 120px;
+    background-color: #fff;
+}
+#civildomaintext h4{
+    padding: 30px;
+}
+#civildomain h3{
+    font-size: 40px;
+    padding: 30px 30px 0px 30px;
+}
+#civildomain p{
+    font-size: 20px;
+    padding: 30px;
+    font-family: sans-serif;
+}
+#civildomainimg{
+    background: url("../static/img/civildomain.jpg") center center/cover, linear-gradient(grey, grey, grey, rgb(51, 48, 48));
+    background-blend-mode: multiply;
+}
+.civildomainanimcont{
+    height: 55%;
+    width: 92%;
+    right: 0%;
+    top: 17%;
+    position: relative;
+}
+.civildomainanim{
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    position: absolute;
+    box-shadow: -2px 2px 50px;
+    opacity: 5%;
+}
+
+/* civil domain list section  */
+#civildomainlist{
+    padding: 0px;
+    display: grid;
+    grid-template-rows: 5fr 5fr 5fr 5fr 5fr;
+}
+.listitems{
+    background-color: #121212;
+    display: grid;
+    grid-template-columns: 40fr 60fr;
+    padding: 30px 0px;
+}
+.listitemstext{
+    padding: 50px 100px 50px 50px;
+    font-size: 20px;
+    /* color: #c2ab92; */
+    color: rgb(179, 169, 169);
+    font-family: 'Cormorant Garamond';
+}
+.listitemanimcont{
+    height: 100%;
+    width: 70%;
+
+    position: relative;
+}
+.listimg{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-position: center;
+    object-fit: cover;
+    position: absolute;
+    opacity: 5%;
+}
+
+/* arc domain secton  */
+#arcdomain{
+    display: grid;
+    grid-template-columns: 54fr 46fr;
+}
+#arcdomaintext{
+    display: flex;
+    flex-direction: column;
+    padding: 130px 120px 200px 120px;
+    background-color: #fff;
+    color: #3b3737;
+    text-align: right;
+}
+#arcdomaintext h4{
+    padding: 30px;
+}
+#arcdomaintext h3{
+    font-size: 40px;
+    padding: 30px 30px 0px 30px;
+}
+#arcdomaintext p{
+    font-size: 20px;
+    padding: 30px;
+    font-family: sans-serif;
+}
+#arcdomainimg{
+    background: url("../static/img/arcdomain.jpg") center center/cover, linear-gradient(black, rgb(66, 63, 63), rgb(68, 65, 65), rgb(92, 88, 88), rgb(92, 88, 88), rgb(59, 58, 58), rgb(58, 55, 55));
+    background-blend-mode: multiply;
+}
+.arcdomainanimcont{
+    height: 58%;
+    width: 92%;
+    right: 0%;
+    top: 17%;
+    position: relative;
+}
+.arcdomainanim{
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    position: absolute;
+    box-shadow: -2px 2px 50px;
+    opacity: 5%; 
+}
+#arcdomaingridcont{
+    padding-top: 0px;
+}
+#arcdomaingriditems{
+    background-color: #121212;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    gap: 70px;
+    padding: 120px 15%;
+}
+.griditems{
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+}
+.griditems h3{
+    color: white;
+    padding: 35px 50px;
+    font-family: 'Cormorant Garamond',Georgia,"Times New Roman",serif;
+    font-size: 34px;
+    line-height: 1.4em;
+    font-weight: lighter;
+}
+#arcgrid1{
+    background: url("../static/img/arcgrid1.jpg") center center/cover, linear-gradient(rgb(145, 143, 143), rgb(65, 61, 61));
+    background-blend-mode: multiply;
+}
+#arcgrid2{
+    background: url("../static/img/arcgrid2.jpg") center center/cover, linear-gradient(rgb(145, 143, 143), rgb(65, 61, 61));
+    background-blend-mode: multiply;
+}
+#arcgrid3{
+    background: url("../static/img/arcgrid3.jpg") center center/cover, linear-gradient(rgb(145, 143, 143), rgb(65, 61, 61));
+    background-blend-mode: multiply;
+}
+#arcgrid4{
+    background: url("../static/img/arcgrid4.jpg") center center/cover, linear-gradient(rgb(145, 143, 143), rgb(65, 61, 61));
+    background-blend-mode: multiply;
+}
+#arcgrid5{
+    background: url("../static/img/arcgrid5.jpg") center center/cover, linear-gradient(rgb(145, 143, 143), rgb(65, 61, 61));
+    background-blend-mode: multiply;
+}
+#arcgrid6{
+    background: url("../static/img/arcgrid6.jpg") center center/cover, linear-gradient(rgb(145, 143, 143), rgb(65, 61, 61));
+    background-blend-mode: multiply;
+}
+#arcgrid7{
+    background: url("../static/img/arcgrid7.jpg") center center/cover, linear-gradient(rgb(145, 143, 143), rgb(65, 61, 61));
+    background-blend-mode: multiply;
+}
+#arcgrid8{
+    background: url("../static/img/arcgrid8.jpg") center center/cover, linear-gradient(rgb(145, 143, 143), rgb(65, 61, 61));
+    background-blend-mode: multiply;
+}
+#arcgrid9{
+    background: url("../static/img/arcgrid9.jpg") center center/cover, linear-gradient(rgb(145, 143, 143), rgb(65, 61, 61));
+    background-blend-mode: multiply;
+}
+#arcgrid10{
+    background: url("../static/img/arcgrid10.jpg") center center/cover, linear-gradient(rgb(145, 143, 143), rgb(65, 61, 61));
+    background-blend-mode: multiply;
+}
+
+/* animation section  */
+/* civil domain lst item animation  */
+
+/* @keyframes animtype3{
+    from{
+        left: -10%;
+        opacity: 5%;
+    }
+    to{
+        left: 35%;
+        opacity: 100%;
+    }
+} */
+@keyframes animtype3{
+    from{
+        left: -10%;
+        opacity: 5%;
+    }
+    to{
+        left: 35%;
+        opacity: 100%;
+    }
+}
+@media (min-width:1001px) and (prefers-reduced-motion: no-preference) {
+    .anim3{
+        animation: animtype3 1.2s 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    }
+}
+@media (min-width: 801px) and (max-width: 1000px){
+    #servicesmain{
+        width: 100vw;
+        height: 100vw;
+    }
+    #servicesmain h3{
+        font-size: 60px;
+        margin: 0px;
+        padding-top: 250px;
+    }
+    #civildomain{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #civildomainimg{
+        width: 100vw;
+        height: 90vw;
+    }
+    .civildomainanimcont{
+        width: 80vw;
+        height: 70vw;
+        justify-content: center;
+        align-items: center;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        margin: 10vw;
+    }
+    .civildomainanim{
+        opacity: 100%;
+    }
+    #civildomaintext{
+        padding: 5%;
+    }
+    #civildomainlist{
+        display: flex;
+        flex-direction: column;
+        padding-top: 150px;
+    }
+    .listitemanimcont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .listimg{
+        width: 80%;
+        height: 100%;
+        border-radius: 20px;
+        opacity: 100%;
+        position: relative;
+    }
+    #arcdomain{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 150px;
+    }
+    #arcdomainimg{
+        width: 100vw;
+        height: 90vw;
+    }
+    .arcdomainanimcont{
+        width: 80vw;
+        height: 70vw;
+        justify-content: center;
+        align-items: center;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        margin: 10vw;
+    }
+    .arcdomainanim{
+        opacity: 100%;
+    }
+    #arcdomaintext{
+        padding: 5%;
+    }
+    /* #arcdomaingriditems{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 120px 15%;
+    } */
+    /* .griditems{
+        width: 80vw;
+        height: 60vw;
+        display: flex;
+        align-items: flex-end;
+    } */
+    .griditems h3{
+        padding: 20px 35px;
+    }
+}
+@media (min-width: 501px) and (max-width: 800px){
+    body{
+        padding-top: 94px;
+    }
+    #servicesmain{
+        width: 100vw;
+        height: 100vw;
+    }
+    #servicesmain h3{
+        font-size: 40px;
+        margin: 0px;
+        padding-top: 40%;
+    }
+    #civildomain{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #civildomainimg{
+        width: 100vw;
+        height: 90vw;
+    }
+    .civildomainanimcont{
+        width: 80vw;
+        height: 70vw;
+        justify-content: center;
+        align-items: center;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        margin: 10vw;
+    }
+    .civildomainanim{
+        opacity: 100%;
+    }
+    #civildomaintext{
+        padding: 5%;
+    }
+    #civildomainlist{
+        display: flex;
+        flex-direction: column;
+        padding-top: 150px;
+    }
+    .listitems{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    } 
+    .listitemanimcont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .listimg{
+        width: 90vw;
+        height: 50vw;
+        border-radius: 20px;
+        opacity: 100%;
+        position: relative;
+    }
+    #arcdomain{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 150px;
+    }
+    #arcdomainimg{
+        width: 100vw;
+        height: 90vw;
+    }
+    .arcdomainanimcont{
+        width: 80vw;
+        height: 70vw;
+        justify-content: center;
+        align-items: center;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        margin: 10vw;
+    }
+    .arcdomainanim{
+        opacity: 100%;
+    }
+    #arcdomaintext{
+        padding: 5%;
+    }
+    #arcdomaingriditems{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 120px 15%;
+    }
+    .griditems{
+        width: 80vw;
+        height: 60vw;
+        display: flex;
+        align-items: flex-end;
+    }
+}
+@media (min-width:200px) and (max-width:500px){
+    body{
+        padding-top: 94px;
+    }
+    #servicesmain{
+        width: 100vw;
+        height: 100vw;
+    }
+    #servicesmain h3{
+        font-size: 40px;
+        margin: 0px;
+        padding-top: 40%;
+    }
+    #civildomain{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #civildomainimg{
+        width: 100vw;
+        height: 90vw;
+    }
+    .civildomainanimcont{
+        width: 80vw;
+        height: 70vw;
+        justify-content: center;
+        align-items: center;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        margin: 10vw;
+    }
+    .civildomainanim{
+        opacity: 100%;
+    }
+    #civildomaintext{
+        padding: 5%;
+    }
+    #civildomainlist{
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .listitems{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    } 
+    .listitemanimcont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .listimg{
+        width: 90vw;
+        height: 50vw;
+        border-radius: 20px;
+        opacity: 100%;
+        position: relative;
+    }
+    .listitemstext{
+        padding: 30px;
+
+    }
+    #arcdomain{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 100px;
+    }
+    #arcdomainimg{
+        width: 100vw;
+        height: 90vw;
+    }
+    .arcdomainanimcont{
+        width: 80vw;
+        height: 70vw;
+        justify-content: center;
+        align-items: center;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        margin: 10vw;
+    }
+    .arcdomainanim{
+        opacity: 100%;
+    }
+    #arcdomaintext{
+        padding: 5%;
+    }
+    #arcdomaingriditems{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 120px 15%;
+    }
+    .griditems{
+        width: 80vw;
+        height: 60vw;
+        display: flex;
+        align-items: flex-end;
+    }
+    .griditems h3{
+        font-size: 20px;
+        padding: 20px 30px;
+    }
+}

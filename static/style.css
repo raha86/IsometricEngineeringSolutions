@@ -1,0 +1,96 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+body{
+    margin: 0;
+    padding: 0;  
+}
+
+/* contact head */
+#contacthead{
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+}
+#contacthead ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0px;
+}
+#contacthead ul li{
+    list-style: none;
+    padding: 10px;
+    /* margin-left: 10px; */
+}
+#contacthead ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+}
+/* navbar */
+#navbar{
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+    top: 42px;
+    width: 100%;
+    box-shadow: grey 0 0 7px;
+    z-index: 10;
+}
+#logo img{
+    height: 60px;
+    width: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-bottom: 7px;
+}
+#navmenu{
+    width: 100%;
+}
+#navmenu ul{
+    display: flex;
+    justify-content: end;
+}
+#navmenu ul li{
+    list-style: none;
+    padding-right: 20px;
+    margin: 14px;
+}
+#navmenu ul li a{
+    text-decoration: none;
+}
+/* home section  */
+#sechome{
+    position: absolute;
+    height: 850px;
+    background: url("../static/img/home.jpg") center center/cover, linear-gradient(grey, grey);
+    background-blend-mode: multiply;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* align-items: center; */
+    text-align: center;
+    /* justify-content: center; */
+}
+#sechome h3{
+    font-size: 80px;
+    margin: 0px;
+    padding-top: 250px;
+    align-items: center;
+}
+#sechome p{
+    margin: 0px;
+    padding: 40px;
+    font-size: 25px;
+    font-family: sans-serif;
+}

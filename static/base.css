@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Cormorant+Garamond:wght@400;500&family=Karla:wght@300;400;600&family=Montserrat&family=Nanum+Myeongjo&family=Roboto:ital,wght@0,400;0,900;1,900&family=Work+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Bakbak+One&family=Cormorant+Garamond:wght@400;500&family=Karla:wght@300;400;600&family=Montserrat&family=Nanum+Myeongjo&family=Readex+Pro:wght@500&family=Roboto:ital,wght@0,400;0,900;1,900&family=Work+Sans&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+body{
+    margin: 0;
+    padding: 0;  
+}
+
+/* contact head */
+#contacthead{
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+#contacthead a{
+    color: white;
+    font-family: monospace;
+    text-decoration: none;
+}
+#contacthead a:hover{
+    color: #c2ab92;
+}
+#contacthead p{
+    font-family: monospace;
+}
+.headitem{
+    font-size:17px;
+    padding: 10px;
+}
+.fa{
+    padding: 0 3px;
+}
+.phitem{
+    position: relative;
+    top: 3px;
+}
+/* navbar */
+#navbar{
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+    top: 40px;
+    width: 100vw;
+    box-shadow: grey 0 0 7px;
+    z-index: 10;
+}
+#logo img{
+    height: 67px;
+    width: auto;
+    margin-top: 6px;
+    margin-left: 10px;
+    padding-bottom: 4px;
+}
+#navmenu{
+    width: 100%;
+}
+#navmenu ul{
+    display: flex;
+    justify-content: end;
+    margin-top: 29px;
+    padding-right: 20px;
+}
+#navmenu ul li{
+    list-style: none;
+}
+#navmenu ul li a{
+    text-decoration: none;  
+    color: #c2ab92;
+    font-family: 'Readex Pro', sans-serif;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: .4s;
+}
+#navcontact{
+    background-color: #43434b;
+    padding: 10px;
+    border-radius: 5px;
+}
+#navmenu ul li a:hover{
+    background-color: #c2ab92;
+    color: white;
+    border-radius: 15px;
+}
+#hamburger{
+    display: none;
+}
+
+/* footer section  */
+#mainfooter{
+    background-color: #222;
+    color: white;
+    width: 100%;
+}
+#footermenu{
+    display: grid; 
+    grid-template-columns: 7fr 2.5fr; 
+    padding: 0px 10% 0px 10%;
+}
+.footitem{
+    padding: 100px 30px;
+}
+.footitem h3{
+    font-weight: lighter;
+    font-size: 30px;
+    color: #78797c;
+    padding-bottom: 20px;
+}
+#footer{
+    background-color: #171717;
+    padding: 30px 200px;
+    color: #585555;
+    text-align: center;
+}
+
+/* contents are in -> home, about, services section  */
+/* small header section  */
+.smallhead{
+    font-family: 'Karla',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #c2ab92;
+    letter-spacing: 1px;
+}
+
+/* line section  */
+.line{
+    background-color: #c2ab92;
+}
+
+/* contents are in home, about, services section  */
+/* main header section  */
+.mainhead{
+    font-family: 'Cormorant Garamond',Georgia,"Times New Roman",serif;
+    font-size: 40px;
+    line-height: 1.4em;
+    font-weight: lighter;
+}
+
+/* animation section  -> used in home, services page*/
+/* for type 1 animation  */
+@keyframes animtype1{
+    from{
+        right: 0%;
+        opacity: 5%;
+    }
+    to{
+        right: 12%;
+        opacity: 100%;
+    }
+}
+@media (prefers-reduced-motion: no-preference) and (min-width:1001px)  {
+    .anim1{
+        animation: animtype1 1.2s 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    }
+}
+
+/* type 2 animation  */
+@keyframes animtype2{
+    from{
+        left: 0%;
+        opacity: 5%;
+    }
+    to{
+        left: 10%;
+        opacity: 100%;
+    }
+}
+@media (prefers-reduced-motion: no-preference) and (min-width:1001px) {
+    .anim2{
+        animation: animtype2 1.2s 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    }
+}
+
+
+/* media query section  */
+@media(min-width:801px) and (max-width:1000px){
+    #contacthead{
+        height: fit-content;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    #contacthead a{
+        text-align: center;
+    }
+    #navbar{
+        position: fixed;
+    }
+    #navmenu{
+        overflow: hidden;
+        height: 0;
+        position: absolute;
+        top: 80px;
+        transition: height 0.3s;
+    }
+    #navmenu ul{
+        width: 100%;
+        background-color: #222;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 80%;
+        margin-top: 0px;
+    }
+    #navmenu ul li{
+        font-size: 16px;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+    #navmenu ul li a{
+        padding: 10px 0;
+    }
+    .item a{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    #navmenu ul li a:hover{
+        background-color: #c2ab92;
+        color: #222;
+        width: 100%;
+        opacity: 80%;
+        border-radius: 0;
+    }
+    #navcontact{
+        background-color: #222;
+    }
+    
+    #hamburger{
+        display: flex;
+        flex-direction: column;
+        top: 13px;
+        right: 30px;
+        position: absolute;
+        padding: 10px;
+    }
+    
+    #hamburger:hover{
+        background-color: #f0e6e6;
+    }
+    .ham{
+        width: 30px;
+        height: 4px;
+        margin: 3px;
+        background-color: #c2ab92;
+        border-radius: 3px;
+    }
+    
+    #footermenu{
+        display: flex;
+        flex-direction: column;
+    }
+    .footitem{
+        padding: 50px 30px;
+    }
+    #footer{
+        height: fit-content;
+        padding: 30px 30px;
+    }
+}
+
+@media(max-width:800px){
+    #contacthead{
+        position: fixed;
+        top: 0px;
+        transition: top 0.3s;
+    }
+    .headitem{
+        padding: 10px 5px;
+    }
+    .headitemPhone{
+        display: none;
+    }
+    #navbar{
+        top: 40px;
+        position: fixed;
+        min-width: 330px;
+        transition: top 0.3s;
+    }
+    #logo img{
+        height: 40px;
+        width: auto;
+        margin-top: 7px;
+        margin-left: 7px;
+        padding-bottom: 3px;
+    }
+    #navmenu{
+        overflow: hidden;
+        height : 0;
+        position: absolute;
+        top: 54px;
+        transition: height 0.3s;
+    }
+    #navmenu ul{
+        width: 100%;
+        background-color: #222;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 80%;
+        margin-top: 0px;
+    }
+    #navmenu ul li{
+        font-size: 16px;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+    #navmenu ul li a{
+        padding: 10px 0;
+    }
+    .item a{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    #navmenu ul li a:hover{
+        background-color: #c2ab92;
+        color: #222;
+        width: 100%;
+        opacity: 80%;
+        border-radius: 0;
+    }
+    #navcontact{
+        background-color: #222;
+    }
+    #hamburger{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 1px;
+        right: 4px;
+        padding: 10px;
+    }
+    
+    #hamburger:hover{
+        background-color: #f0e6e6;
+    }
+    .ham{
+        width: 30px;
+        height: 4px;
+        margin: 3px;
+        background-color: #c2ab92;
+        border-radius: 3px;
+    }
+    
+    #footermenu{
+        display: flex;
+        flex-direction: column;
+    }
+    .footitem{
+        padding: 30px 2%;
+    }
+    #footer{
+        height: fit-content;
+        padding: 30px 30px;
+    }
+    .mainhead{
+        font-size: 25px;
+    }
+}
+
+.scrollToTopBtn{
+    opacity: 80%;
+    background-color: #8e8f92;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: -40px;
+    transition: right 0.3s;
+    bottom: 25%;
+    font-size: 30px;
+}
+.scrollToTopBtn:hover{
+    cursor: pointer;
+    background-color: #b2b3b8;
+}

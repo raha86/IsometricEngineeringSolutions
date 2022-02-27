@@ -1,0 +1,210 @@
+/* about main section  */
+#aboutmain{
+    height: 850px;
+    background: url("../static/img/aboutmain.jpg") center center/cover, linear-gradient(grey, grey);
+    background-blend-mode: multiply;
+    color: white;
+}
+#aboutmain h3{
+    font-size: 80px;
+    margin: 0px;
+    padding-top: 250px;
+    text-align: center;
+}
+/* about text section  */
+#abouttext p{
+    padding : 10%;
+    font-size: 35px; 
+    font-family: 'Cormorant Garamond';
+}
+
+/* member secton  */
+#secmembers{
+    background-color: #121212;
+}
+#secmembersinside{
+    display: flex;
+    flex-direction: column;
+    padding: 6% 10%;
+}
+.members{
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: 30fr 70fr;
+    gap: 60px;
+}
+.memberimgcont{
+    display: flex;
+    flex-direction: column;
+}
+.memberimg{
+    position:relative;
+    width: 360px;
+    height: 500px;
+}
+.membered{
+    background-color: #222;
+    margin-top: 40px;
+    padding: 35px;
+    color: #c2ab92;
+    width: 290px;
+    font-family: 'Cormorant Garamond';
+}
+.membered p{
+    /* height: 100%; */
+    font-size: 20px;
+}
+#memberimg1{
+    background: url("../static/img/member1.jpg") center center/cover;
+}
+#memberimg2{
+    background: url("../static/img/member2.jpeg") center center/cover;
+}
+#memberimg3{
+    background: url("../static/img/member3.jpeg") center center/cover;
+}
+.membertext{
+    background-color: #222;
+}
+.membertext h3{
+    font-family: 'Cormorant Garamond',Georgia,"Times New Roman",serif;
+    font-size: 25px;
+    line-height: 1.4em;
+    font-weight: lighter;
+    color: white;
+    padding: 45px 35px 10px 35px;
+}
+.membertext h4{
+    font-family: 'Karla',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #c2ab92;
+    letter-spacing: 1px;
+    padding: 0px 35px 20px 35px;
+}
+.membertext hr{
+    left: 35px;
+    position: relative;
+    width: 100px;
+    background-color: #c2ab92;
+    border-color: #c2ab92;
+}
+.membertext p{
+    color: white;
+    padding: 40px 35px 10px 35px;
+    font-size: 20px;
+    font-family: 'Cormorant Garamond';
+}
+@media (min-width:801px) and (max-width:1000px){
+    #aboutmain{
+        width: 100vw;
+        height: 100vw;
+    }
+    #aboutmain h3{
+        font-size: 60px;
+        margin: 0px;
+        padding-top: 250px;
+    }
+    #secmembersinside {
+        padding: 6% 6%;
+    }
+    .members {
+        gap: 40px;
+        padding: 40px 0px;
+    }
+    .memberimg {
+        position: relative;
+        width: 260px;
+        height: 350px;
+    }
+    .membered {
+        width: 190px;
+    }
+}
+@media (min-width:501px) and (max-width:800px){
+    body{
+        padding-top: 94px;
+    }
+    #aboutmain{
+        width: 100vw;
+        height: 100vw;
+    }
+    #aboutmain h3{
+        font-size: 40px;
+        margin: 0px;
+        padding-top: 40%;
+    }
+    #abouttext p{
+        font-size: 30px;
+    }
+    .members {
+        padding: 50px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .memberimgcont{
+        align-items: center;
+    }
+    .memberimg {
+        width: 80vw;
+        height: 100vw;
+    }
+    .membered{
+        width: 80vw;
+        padding: 35px 0px;
+    }
+    .membered p{
+        padding: 0px 35px;
+    }
+}
+@media (min-width:200px) and (max-width:500px){
+    body{
+        padding-top: 94px;
+    }
+    #aboutmain{
+        width: 100vw;
+        height: 100vw;
+    }
+    #aboutmain h3{
+        font-size: 40px;
+        margin: 0px;
+        padding-top: 40%;
+    }
+    #abouttext p{
+        font-size: 25px;
+    }
+    .members {
+        padding: 40px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .memberimgcont{
+        align-items: center;
+    }
+    .memberimg {
+        width: 80vw;
+        height: 100vw;
+    }
+    .membered{
+        width: 80vw;
+        padding: 35px 0px;
+    }
+    .membered p{
+        padding: 0px 35px;
+    }
+    .membertext h3 {
+        padding: 30px 25px 10px 25px;
+    }
+    .membertext h4{
+        padding: 0px 25px 20px 25px;
+    }
+    .membertext hr {
+        left: 25px;
+    }
+    .membertext p {
+        padding: 30px 25px 10px 25px;
+    }
+}

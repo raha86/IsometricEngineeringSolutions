@@ -1,0 +1,222 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+#seccontact{
+    padding-top: 121px;
+    display: grid;
+    grid-template-columns: 54fr 46fr;
+}
+#contacttext{
+    display: flex;
+    flex-direction: column;
+    padding: 110px 100px 210px 120px;
+    background-color: #fff;
+}
+#contacttext h4{
+    padding: 30px;
+}
+#contacttext h3{
+    font-size: 60px;
+    padding: 10px 30px 0px 30px;
+    font-weight: normal;
+}
+#contacttext h5{
+    font-size: 30px;
+    /* font-family: 'Cormorant Garamond'; */
+    font-weight: lighter;
+    padding: 20px 30px 0px 30px;
+}
+#contacttext p{
+    font-size: 30px;
+    font-family: 'Cormorant Garamond';
+    font-weight: lighter;
+    padding: 0px 30px;
+}
+#contacttext a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family: 'Cormorant Garamond';
+    font-weight: lighter;
+    padding: 0px 30px;
+}
+#contacttext a:hover{
+    color: #867777;
+}
+#contactimg{
+    background: url("../static/img/contact.jpg") center center/cover, linear-gradient(grey, grey, grey, rgb(51, 48, 48));
+    background-blend-mode: multiply;
+}
+.contactimganimcont{
+    height: 65%;
+    width: 92%;
+    right: 0%;
+    top: 10%;
+    position: relative;
+}
+.contactimganim{
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    position: absolute;
+    box-shadow: -2px 2px 50px;
+    opacity: 5%;
+}
+.myform{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 13%;
+    background-color: #121212;
+}
+.formitem{
+    padding: 15px;
+    margin: 15px;
+    background-color: #222!important;
+    border-width: 0;
+    border-radius: 0;
+    font-family: 'Karla',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 18px;
+    color: white;
+    outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #222 inset !important;
+    -webkit-text-fill-color: white;
+}
+
+.invalid{
+    outline: .1px solid red !important;
+}
+.formmsg{
+    min-height: 150px;
+    display: block;
+}
+::placeholder{
+    color: rgba(255,255,255,0.5);
+}
+#btnemailcont{
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+#btnemail{
+    background-color: #121212;
+    width: fit-content;
+    right: 0px;
+    outline: none;
+    border: 0px;
+    font-family: 'Karla',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #c2ab92;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 10px;
+}
+#btnemail:hover{
+    color: #ecd0b2;
+}
+
+@media (min-width:201px) and (max-width:1000px){
+    #seccontact{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #contactimg{
+        width: 100vw;
+        height: 90vw;
+    }
+    .contactimganimcont{
+        width: 80vw;
+        height: 70vw;
+        justify-content: center;
+        align-items: center;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        margin: 10vw;
+    }
+    .contactimganim{
+    opacity: 100%;
+    }
+}
+@media (min-width:501px) and (max-width:800px){
+    body{
+        padding-top: 94px;
+    }
+    #seccontact{
+        padding-top: 0px;
+    }
+    #contacttext{
+        padding: 5%;
+    }
+    .myform{
+        padding: 5% 5%;
+    }
+}
+@media (max-width:500px){
+    body{
+        padding-top: 94px;
+    }
+    #seccontact{
+        padding-top: 0px;
+    }
+    #contacttext{
+        padding: 2%;
+    }
+    .myform{
+        padding: 5% 5%;
+    }
+    #contacttext h3{
+        font-size: 50px;
+    }
+}
+
+.alertBoxCont{
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.alertBox{
+    display: none;
+    background-color: #867777;
+    opacity: 95%;
+    font-size: 18px;
+    border-radius: 5px;
+    width: fit-content;
+    font-family: 'Karla',Helvetica,Arial,Lucida,sans-serif;
+    margin: 10%;
+    padding: 5%;
+    position: fixed;
+    z-index: 10;
+    color: #f2e4e4;
+}
+.alertBox section{
+    display: flex;
+    justify-content: right;
+}
+.closeAlert{
+    border: none;
+    background-color: #867777;
+    font-weight: bold;
+    color: #222;
+    transition: 0.1s;
+}
+.closeAlert:hover{
+    color: #dad8d4;
+    cursor: pointer;
+}

@@ -1,0 +1,46 @@
+extends base.pug
+
+block style
+    include ../static/contact.css
+
+block content
+  section#seccontact 
+    section#contacttext
+      h4.smallhead CONTACT US
+      h3.mainhead Let's Start Building
+      h5 Call Us 
+      p 9831030145
+      p 8276808466
+      p 9748410832
+      h5 Mail Us
+      a(href="mailto:isometricengineerings@gmail.com")
+        |isometricengineerings@gmail.com 
+    section#contactimg 
+      section.contactimganimcont 
+        img(src="../static/img/contact.jpg", alt="" class="contactimganim")
+  section#contactform 
+    //- form(action="mailto:shibashisraha2000@gmail.com", method="post" class="myform" name='contactForm') 
+    form(action="", method="" class="myform" id ="" name='contactForm') 
+      input(type="text", class="formitem", id ="" name="name", placeholder="Name")
+      input(type="phone", class="formitem", id ="" name="phone", placeholder="Phone No.")
+      input(type="email", class="formitem", id ="" name="email", placeholder="email")
+      input(type="text", class="formitem", id ="" name="subject", placeholder="Subject")
+      textarea(type="text", class="formitem formmsg", id ="" name="message", placeholder="Message")
+      section#btnemailcont
+        button(id="btnemail")
+          |-EMAIL US
+
+  section.alertBoxCont
+    section.alertBox 
+      p Name Must be more than 6 characters long and it should contain only alphabets.
+      br
+      p Phone number must contain 10 digits.
+      br
+      p Subject must be 10 to 100 characters long.
+      br
+      p Message must be 100 to 3000 characters long.
+      section 
+        button.closeAlert
+          |&#9587;
+block scripts
+  script(src="../static/contact.js") 

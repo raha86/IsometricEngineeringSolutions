@@ -1,0 +1,91 @@
+doctype html
+html
+  head
+    title The perfect civil engineering and architectural solution - IES
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0') 
+    meta(name='description' content='Isometric Engineering Solutions offers entire range of Civil, Finishing & Interior Fit-out services on Turnkey or Labour Contracting basis as per client requirements. We also offer Project Management Consultancy services and Structural & Architectural Design services managed by highly experienced & qualified professional Engineers.') 
+    meta(name='keyword' content='Civil Engineering,Architectural Design,Interior Design,Water Proofing,Construction,Jacketing,Micro-concreting,Normal Grouting,Injection Grouting,pressure Grouting,Nozzle Grouting,Chemical Anchoring,Carbon Wrapping,non-destructive testing,Interior Fit-out')
+
+    link(rel="apple-touch-icon" sizes="180x180" href="../static/img/favicon/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="../static/img/favicon/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="../static/img/favicon/favicon-16x16.png")
+    link(rel="manifest" href="../static/img/favicon/site.webmanifest")
+    link(rel="mask-icon" href="../static/img/favicon/safari-pinned-tab.svg" color="#5bbad5")
+    meta(name="msapplication-TileColor" content="#da532c")
+    meta(name="theme-color" content="#ffffff")
+
+    style
+        include ../static/base.css  
+        block style
+  body
+    section#contacthead
+    
+      a(href = "mailto:isometricengineerings@gmail.com", class="headitem") 
+        i.fa(style='font-size:17px')
+          |&#xf0e0;
+        |isometricengineerings@gmail.com
+      p.headitem.headitemPhone
+        i.fa.phitem(style='font-size:17px')
+          |&#xf095;
+        |9831030145
+      p.headitem.headitemPhone
+        i.fa.phitem(style='font-size:17px')
+          |&#xf095;
+        |8276808466
+      p.headitem.headitemPhone
+        i.fa.phitem(style='font-size:17px')
+          |&#xf095;
+        |9748410832
+
+    nav#navbar
+      section#logo
+        img(src="../static/img/logo.png" alt='')
+      section#navmenu
+        ul 
+          li.item
+            a(href='/') HOME
+          li.item
+            a(href='/gallery' target = "_blank") GALLERY
+          li.item
+            a(href='/services') SERVICES
+          li.item
+            a(href='/about') ABOUT
+          li.item
+            a#navcontact(href='/contact') CONTACT US
+   
+      section#hamburger( onclick='myFunction()')
+        span.ham
+        span.ham
+        span.ham
+    block content
+    
+    footer#mainfooter 
+      section#footermenu
+        section#footcomp.footitem
+            h3 Company Specific
+            p Registered Office Address : 3B Nataraj Apartment, 176/14/78 Raipur Road Regent Estate, Kolkata, West Bengal – 700092
+            p Corporate Office Address : Rajarhat Main Rd, Pearabagan, Tegharia (near Lokenath Mandir) Kolkata, West Bengal - 700157
+            p Trade License No. : 0017 2400 9760 (issuing authority Kolkata Municipal Corporation)
+            p PAN No. : AAIFI2617K1ZH
+            p GSTIN : 19AAIFI2617K1Z5
+            p EPF Code No. : WBCAL2394812000
+            p ESIC Code No. : 41000864440000999
+            p MSME Registration No. : WB10A0020804; manufacturing type, registered under Micro category
+            p P Tax Registration No. : 192137821064
+        section#footcontact.footitem
+            h3 Contact Us
+            p isometricengineerings@gmail.com
+            p 9831030145
+            p 8276808466
+            p 9748410832
+            
+      section#footer 
+        p Copyright © 2022 Isometric Engineering Solutions. All rights reserved.
+
+    button.scrollToTopBtn 
+      i.fa.fa-angle-up 
+
+block scripts
+script(src="../static/base.js") 

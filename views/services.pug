@@ -1,0 +1,86 @@
+extends base.pug
+
+block style
+    include ../static/services.css
+
+block content
+  section#servicesmain  
+    h3 OUR SERVICES
+
+  section#civildomain
+    section#civildomaintext 
+      h4.smallhead We build infrastructure
+      h3.mainhead Civil Engineering Domain 
+      p We make you the better place to live. We build the infrastructure which includes homes, sewers, highways, bridges, tunnels, industrial plants, corporate sectors and many more.  
+    section#civildomainimg 
+      section.civildomainanimcont 
+        img(src="../static/img/civildomain.jpg", alt="" class = "civildomainanim")
+  
+  section#civildomainlist 
+    section.listitems  
+      section.listitemsimg 
+        section.listitemanimcont.civillistcont1
+          img(src="../static/img/civillist1.jpg", alt="" class = "civillist1 listimg")
+      section.listitemstext 
+        p  Civil works execution of any kind of structure (RCC, Masonary, MS Structural Steel etc.) from small house to big multi-storied residential or commercial or hospital building or any other structure like Industrial structure, Metro Station building.
+    section.listitems  
+      section.listitemsimg 
+        section.listitemanimcont.civillistcont2
+          img(src="../static/img/civillist2.jpg", alt="" class = "civillist2 listimg")
+      section.listitemstext 
+        p Other associated works like road development, Sewer and Drainage work, Treatment Plants, Plumbing and Electrical works, Rain Water Harvesting system etc.
+    section.listitems  
+      section.listitemsimg 
+        section.listitemanimcont.civillistcont3
+          img(src="../static/img/civillist3.jpg", alt="" class = "civillist3 listimg")
+      section.listitemstext 
+        p Waterproofing of all types and structures, other grouting works and strengthening of structures by Carbon Wrapping, Jacketing, Micro-concreting or other techniques and non-destructive testing. We try to add value to our Engineering services with real “Value Engineering” from our experience.
+    section.listitems  
+      section.listitemsimg 
+        section.listitemanimcont.civillistcont4
+          img(src="../static/img/civillist4.jpg", alt="" class = "civillist4 listimg")
+      section.listitemstext 
+        p We provide finest and the most economical End to End solutions for house construction, Renovation and Retrofitting, work supervision or Project Management Consultancy by experienced Supervisors, Engineers and Architects. Other consultancy services include building Plan and Design as per corporation or municipality building rules, project valuation and costing, plan and structural approval from authority, execution and execution supervision.
+    section.listitems  
+      section.listitemsimg 
+        section.listitemanimcont.civillistcont5
+          img(src="../static/img/civillist5.jpg", alt="" class = "civillist5 listimg")
+      section.listitemstext 
+        p We keep on updating ourselves with latest construction techniques of the industry.
+  
+  section#arcdomain
+    section#arcdomaintext 
+      h4.smallhead Piece of art
+      h3.mainhead Interior Designing and Architectural Services.
+      p We can provide you the best solutions by transforming a dull and tedious home to an exquisite piece of art well within your budget with innovative ideas. We offer wide range of services as below:-
+    section#arcdomainimg
+      section.arcdomainanimcont
+        img(src="../static/img/arcdomain.jpg", alt="" class = "arcdomainanim")
+  section#arcdomaingridcont
+    section#arcdomaingriditems
+      section.griditems#arcgrid1
+        h3 Plumbing
+      section.griditems#arcgrid2 
+        h3 Electrics
+      section.griditems#arcgrid3
+        h3 Painting
+      section.griditems#arcgrid4
+        h3 Wallpaper 
+      section.griditems#arcgrid5 
+        h3 Flooring
+      section.griditems#arcgrid6
+        h3 Woodwork
+      section.griditems#arcgrid7
+        h3 Curtain and Blinds
+      section.griditems#arcgrid8
+        h3 False Ceiling
+      section.griditems#arcgrid9
+        h3 Door and Window, Façade and Glazing Works 
+      section.griditems#arcgrid10
+        h3 Furniture Work 
+      //- section.griditems 
+      //-   h3 
+      
+
+block scripts
+    script(src="../static/services.js") 
