@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("fs");
 const app = express();
 // const hostName = '0.0.0.0';
-const port = 80;
+// const port = 80;
 
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static'))
@@ -40,6 +40,10 @@ app.get('/contact', (req, res)=>{
 })
 
 // START THE SERVER
-app.listen(port, ()=>{
-    console.log(`The application started successfully on port ${port}`);
-});
+// app.listen(port, ()=>{
+//     console.log(`The application started successfully on port ${port}`);
+// });
+
+app.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
