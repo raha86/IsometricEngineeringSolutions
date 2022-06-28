@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("fs");
 const app = express();
 // const hostName = '0.0.0.0';
-const port = 80;
+//const port = 80;
 
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static'))
